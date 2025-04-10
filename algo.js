@@ -1,3 +1,4 @@
+Brisk Logo Menu
 /*!
  * jQuery JavaScript Library v1.5.2
  * http://jquery.com/
