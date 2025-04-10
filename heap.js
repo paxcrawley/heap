@@ -1,3 +1,4 @@
+Brisk Logo Menu
 // Copyright 2011 David Galles, University of San Francisco. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are
@@ -23,38 +24,6 @@
 // The views and conclusions contained in the software and documentation are those of the
 // authors and should not be interpreted as representing official policies, either expressed
 // or implied, of the University of San Francisco
-// Ensure this function is defined and works properly
-function initCanvas() {
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    // Do any necessary setup for the canvas
-    ctx.fillStyle = 'lightblue';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
-    return ctx; // Returning the context for further use
-}
-
-// Your Heap class definition (ensure it is defined)
-class Heap {
-    constructor(animManag, width, height) {
-        this.animManag = animManag;
-        this.width = width;
-        this.height = height;
-        // Initialize the heap here
-    }
-    
-    // Add methods for heap operations
-}
-
-// The init function, which calls initCanvas
-function init() {
-    var animManag = initCanvas(); // Initializes the canvas
-    currentAlg = new Heap(animManag, canvas.width, canvas.height); // Creates the heap visualization
-}
-
-// Make sure init() is called when the page loads
-window.onload = init;
-
 
 
 function Heap(am)
@@ -419,18 +388,9 @@ Heap.prototype.enableUI = function(event)
 
 
 var currentAlg;
-function initCanvas() {
-    // Get the canvas element by ID
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d'); // Get the 2D context of the canvas
 
-    // Perform any setup you need for the canvas
-    ctx.fillStyle = 'lightblue'; // Example setup
-    ctx.fillRect(0, 0, canvas.width, canvas.height); // Example action
-
-    // Return the canvas context or another object for further use
-    return ctx;
+function init()
+{
+	var animManag = initCanvas();
+	currentAlg = new Heap(animManag, canvas.width, canvas.height);
 }
-
-
-
