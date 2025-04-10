@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Heap Visualization</title>
-
-    <!-- WORKING STYLES INLINE -->
-    <script type="text/javascript">
-        // <![CDATA[
-        var cssRules =
-            (function() {
-                var link = document.createElement('link');
-                link.href = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500;700&display=swap";
-                link.rel = "stylesheet";
-                document.head.appendChild(link);
-            })() +
-
-            '.box-rs { background-color: red; border: 1px solid red; padding: 10px; color: white; font-weight: bold; border-radius: 10px; }' +
-            '.box-gs { background-color: green; border: 1px solid green; padding: 10px; color: white; font-weight: bold; border-radius: 10px; }' +
-            '.box-bs { background-color: blue; border: 1px solid blue; padding: 10px; color: white; font-weight: bold; border-radius: 10px; }' +
-            '.heap-node { border-radius: 5px; padding: 10px; margin: 5px; text-align: center; font-family: "Roboto", sans-serif; }' +
-            '.heap-row { display: flex; justify-content: center; margin-bottom: 10px; }';
-
-        var styleElement = document.createElement('style');
-        styleElement.appendChild(document.createTextNode(cssRules));
-        document.getElementsByTagName('head')[0].appendChild(styleElement);
-
-        document.body.style.backgroundColor = '#f0f8ff'; // Alice blue
-        // ]]>
-    </script>
+  <meta charset="UTF-8">
+  <title>Heap Visualization</title>
+  <link rel="stylesheet" href="heap.css">
 </head>
 <body>
-    <h1 class="headers">Heap Visualization</h1>
+  <div id="app">
+    <!-- Your visualizer content will go here -->
+  </div>
 
-    <div id="heapContainer"></div>
-
-    <div style="margin-top: 20px;">
-        <input type="number" id="insertValue" placeholder="Enter value" />
-        <button onclick="insert()">Insert</button>
-        <button onclick="remove()">Remove Root</button>
-        <button onclick="reset()">Reset Heap</button>
-    </div>
-
-    <!-- JS FILE -->
-    <script src="heap.js"></script>
+  <script src="heap.js"></script>
 </body>
 </html>
+
